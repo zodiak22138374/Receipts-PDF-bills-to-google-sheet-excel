@@ -17,7 +17,7 @@ genai.configure(api_key='')#get ur own api key bro
 model = genai.GenerativeModel("gemini-3-flash-preview") #model
 fulltxt = ""
 suffixes = ["png","img","pdf","jpg"]
-prompt = ( "extract the requested information: Amount,Date Bought, and Item/purpose of bill. Each each bill's info should be on its own line. the line that has 'END OF BILL' is the end of that bill, the next line is the start of a new bill. Output format example: 49.8-2007/12/01_Brusco Brothers -DO NOT OUTPUT METADATA -IF BILL REPEATS, STILL INCLUDE IT"
+prompt = ( "extract the requested information: Amount,Date Bought, and Item/purpose of bill. Each each bill's info should be on its own line. the line that has 'END OF BILL' is the end of that bill, the next line is the start of a new bill. Output format example: 49.8-2007/12/01_toystore -DO NOT OUTPUT METADATA -IF BILL REPEATS, SKIP IT"
 )
 
 billinfo = []
@@ -89,6 +89,7 @@ iterfiles()
 import tkinter
 #-------------------------------------#
 #              UI :((((
+
 
 
 
