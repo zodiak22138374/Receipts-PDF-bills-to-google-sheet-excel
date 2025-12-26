@@ -9,6 +9,7 @@ import csv
 import io
 from PIL import Image
 import pytesseract
+#made by zodiak
 #-----------------------------------------------------------#
 #Issues takes a while
 #API key
@@ -88,6 +89,7 @@ iterfiles()
 import tkinter
 #-------------------------------------#
 #              UI :((((
+
 
 
 
