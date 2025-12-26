@@ -12,7 +12,7 @@ import pytesseract
 #-----------------------------------------------------------#
 #Issues takes a while
 #API key
-genai.configure(api_key='AIzaSyAjKnalLKoEk4PPWqB06IQVYCFtcmCVayY')
+genai.configure(api_key='')
 model = genai.GenerativeModel("gemini-3-flash-preview") #model
 fulltxt = ""
 suffixes = ["png","img","pdf","jpg"]
@@ -88,6 +88,7 @@ iterfiles()
 import tkinter
 #-------------------------------------#
 #              UI :((((
+
 
 
 
